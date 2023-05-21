@@ -1,0 +1,14 @@
+{% extends 'app/dummy.html' %}
+
+{% block title %}
+    <title> School </title>
+{% endblock %}
+
+{% block body_block %}
+ <!-- <h1>THIS IS School_list </h1> -->
+
+    {% for i in SFO %}
+       <a href="{{i.pk}}"> <h1 style="background-color: rgb(223, 21, 145);">{{i.sname}}</h1></a>
+    {% endfor %}
+
+{% endblock %}
